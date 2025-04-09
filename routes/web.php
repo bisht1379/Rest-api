@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\RazorpayController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,3 +19,5 @@ Route::get('/post_url',[UserController::class, 'post_url']);
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('razorpay',[RazorpayController::class,'index']);
+Route::post('razorpay-payment',[RazorpayController::class,'store'])->name('razorpay.payment.store');

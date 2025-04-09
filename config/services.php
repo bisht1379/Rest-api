@@ -29,5 +29,9 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+'razorpay' => [
+    'key' => env('rzp_test_h0AzufwoRok6hc'),
+    'secret' => env('JRyz7Mm008aj1yOIQzRMbdoO'),
+],
 
 ];
